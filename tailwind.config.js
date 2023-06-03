@@ -1,17 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-				"controller": "url('/images/controller.webp')",
+	darkMode: "class",
+	content: [
+		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+	],
+	theme: {
+		extend: {
+			colors: {
+				discord: "#5865F2",
+				success: "#57F287",
+				warning: "#FEE75C",
+				error: "#ED4245",
 			},
-    },
-  },
-  plugins: [],
-}
+			backgroundImage: {
+				controller: "url('/images/controller.webp')",
+			},
+		},
+	},
+	plugins: [],
+};

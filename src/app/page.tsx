@@ -7,7 +7,7 @@ export default function Home() {
 				<div className="flex flex-col items-center gap-4">
 					<h1 className="text-[4rem] text-white">Styria</h1>
 					<a
-						className="rounded bg-[#5865F2] px-6 py-4"
+						className="rounded bg-discord px-6 py-4"
 						href={process.env.NEXT_PUBLIC_INVITE_LINK}
 						target="_blank"
 						rel="noopener noreferrer"

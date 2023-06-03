@@ -6,8 +6,8 @@ import UserMenu from "./UserMenu";
 export default function Navbar() {
 	return (
 		<header className="absolute z-30 flex w-full justify-between gap-8 p-4 text-white">
-			<IconMenu2 />
-			<div className="flex gap-4">
+			<IconMenu2 size={32}/>
+			<div className="flex gap-4 items-center">
 				<ThemeButton />
 				<UserMenu />
 			</div>
@@ -20,7 +20,7 @@ function ThemeButton() {
 
 	return (
 		<button onClick={toggleTheme}>
-			{theme === "dark" ? <IconMoon /> : <IconSun />}
+			{theme === "dark" ? <IconMoon size={32}/> : <IconSun size={32}/>}
 		</button>
 	);
 }
