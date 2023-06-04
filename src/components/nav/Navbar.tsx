@@ -2,11 +2,12 @@
 import { useTheme } from "@/app/contexts/theme";
 import { IconMenu2, IconMoon, IconSun } from "@tabler/icons-react";
 import UserMenu from "./UserMenu";
+import Sidebar from "./Sidebar";
 
 export default function Navbar() {
 	return (
 		<header className="absolute z-30 flex w-full justify-between gap-8 p-4 text-white">
-			<IconMenu2 size={32}/>
+			<Sidebar />
 			<div className="flex gap-4 items-center">
 				<ThemeButton />
 				<UserMenu />

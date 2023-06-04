@@ -31,7 +31,7 @@ export default function UserMenu() {
 							)}
 						</Menu.Button>
 					</div>
-					<Menu.Items className="absolute right-0 mt-2 w-48 origin-top-right rounded bg-slate-100 p-1 text-left text-slate-950 dark:bg-slate-800 dark:text-slate-50">
+					<Menu.Items className="absolute right-0 mt-2 w-48 origin-top-right rounded bg-slate-100 p-1 text-left text-slate-950 dark:bg-slate-900 dark:text-slate-50">
 						{status === "unauthenticated" ? (
 							<UserMenuUnauthed />
 						) : (
@@ -67,7 +67,7 @@ function UserMenuAuthed({ session }: { session: Session }) {
 	return (
 		<Menu.Item>
 			<button
-				className="w-full rounded p-2 text-error hover:bg-slate-200 dark:hover:bg-slate-700"
+				className="w-full rounded p-2 text-error hover:bg-slate-200 dark:hover:bg-slate-800"
 				onClick={() => signOut()}
 			>
 				Sign Out
