@@ -18,6 +18,9 @@ module.exports = {
 			backgroundImage: {
 				controller: "url('/images/controller.webp')",
 			},
+			fontFamily: {
+				rajdhani: ["var(--font-rajdhani)"],
+			},
 		},
 	},
 	plugins: [],

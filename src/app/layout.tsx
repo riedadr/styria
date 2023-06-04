@@ -1,10 +1,14 @@
 import Navbar from "@/components/nav/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import localFont from 'next/font/local';
 import ThemeProvider from "./contexts/theme";
 import AuthProvider from "@/components/AuthProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const rajdhani = localFont({
+	src: '../assets/fonts/Rajdhani-Variable.ttf',
+	display: 'swap',
+	variable: "--font-rajdhani"
+  });
 
 export const metadata = {
 	title: "Styria",
@@ -17,7 +21,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" className={rajdhani.className}>
 			<body>
 				<AuthProvider>
 					<ThemeProvider>
