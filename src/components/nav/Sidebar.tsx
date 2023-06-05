@@ -36,7 +36,7 @@ export default function Sidebar() {
 				onClick={() => setIsOpen(false)}
 			></div>
 			<aside
-				className={`fixed left-0 top-0 z-30 h-full w-full bg-light p-4 pl-0 text-dark dark:bg-dark dark:text-light sm:w-80 ${
+				className={`fixed left-0 top-0 z-30 h-full w-full bg-light p-4 pl-0 text-dark drop-shadow dark:bg-dark dark:text-light sm:w-80 ${
 					isOpen ? "-translate-x-0" : "-translate-x-full"
 				} duration-200 ease-in-out`}
 			>
@@ -55,7 +55,7 @@ export default function Sidebar() {
 					</li>
 
 					<li>
-						<h2 className="mt-4 mb-2 border-l-2 border-transparent pl-4 text-xl font-semibold">
+						<h2 className="mb-2 mt-4 border-l-2 border-transparent pl-4 text-xl font-semibold">
 							Games
 						</h2>
 						<ul>

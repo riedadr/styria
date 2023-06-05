@@ -21,7 +21,7 @@ export default function ServerLink({ url }: { url: string }) {
 	};
 	return (
 		<div className="h-24 w-full p-4">
-			<div className="flex h-full w-full items-center justify-center rounded dark:bg-dark">
+			<div className="flex h-full w-full items-center justify-center rounded bg-light drop-shadow dark:bg-dark">
 				<code className="text-lg">{url}</code>
 				<button
 					className="absolute right-4 p-4"
